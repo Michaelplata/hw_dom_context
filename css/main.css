@@ -1,0 +1,75 @@
+
+body {
+  font-family: Palatino;
+}
+
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  margin-right: 1.8rem;
+}
+
+label.primary {
+  display: block;
+  margin: 0.4em 0;
+}
+
+label::after {
+  content: ":";
+}
+
+button, input[type="submit"] {
+  margin-top: 1rem;
+}
+
+#repositories-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.repositories-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: #ddeaff;
+}
+
+#delete-all {
+  --color: hsl(200, 50%, 50%);
+  background: var(--color);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: .5em .75em;
+  border-radius: .25em;
+  cursor: pointer;
+}
+#save {
+  --color: hsl(200, 50%, 50%);
+  background: var(--color);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: .5em .75em;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+#delete-all:hover, .btn:focus {
+  background: hsl(200, 50%, 60%);
+}
+
+#save:hover, .btn:focus {
+  background: hsl(200, 50%, 60%);
+}
+
+#save:hover, .btn:focus {
+  background: hsl(200, 50%, 60%);
+}
+

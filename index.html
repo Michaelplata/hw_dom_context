@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Repositories App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+<!-- Create a form in HTML with inputs for relevant data -->
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="title" class="primary">Title</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="link" class="primary">Link</label>
+          <input type="url" id="link" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="language" class="primary">Language</label>
+          <select id="language" required>
+            <option value="" disabled selected></option>
+            <option value="Python">Python</option>
+            <option value="Java Script">Java Script</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+          </select>
+        </div>
+      </div>
+      <input id="save" type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Repositories:</h1>
+    <ul id="repositories-list"></ul>
+  </body>
+</html>
